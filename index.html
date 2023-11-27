@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .title {
+            font-size: 2em;
+            color: #333;
+        }
+
+        .animation {
+            width: 100px;
+            height: 100px;
+            background-color: #3498db;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-30px);
+            }
+            60% {
+                transform: translateY(-15px);
+            }
+        }
+    </style>
+    <title>Анимированный сайт</title>
+</head>
+<body>
+    <div class="container">
+        <div class="title">By Vlad Chaus and Chat GPT ;)!</div>
+        <div class="animation"></div>
+    </div>
+</body>
+</html>
